@@ -36,12 +36,7 @@
     "rootDir": "."
   },
   "include": ["./src/**/*.ts", "src/**/*.d.ts"],
-  "exclude": [
-    "node_modules",
-    "jest.config.ts",
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
-  ],
+  "exclude": ["node_modules", "jest.config.ts"],
   "references": [
     {
       "path": "./tsconfig.eslint.json"

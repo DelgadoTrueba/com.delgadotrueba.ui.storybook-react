@@ -1,11 +1,8 @@
 const path = require('path');
 
-const prod = true;
-
 const printCompilationMessage = require('./scripts/compilation.config.js');
 
 module.exports = {
-    mode: prod ? 'production' : 'development',
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),

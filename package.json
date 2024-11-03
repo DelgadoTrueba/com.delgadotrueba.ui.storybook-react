@@ -1,6 +1,6 @@
 {
   "name": "@delgadotrueba/prime-react-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Description",
   "author": "delgadotrueba",
   "keywords": [
@@ -15,10 +15,8 @@
     "url": "https://github.com/delgadotrueba/prime-react-lib"
   },
   "scripts": {
-    "web:build": "npx webpack --config webpack.config.js",
-    "build": "npm run build:cjs && npm run build:mjs",
-    "build:cjs": "npx tsc -p tsconfig.cjs.json",
-    "build:mjs": "npx tsc -p tsconfig.mjs.json",
+    "build": "npx webpack --config webpack.config.js --mode production",
+    "build:dev": "npx webpack --config webpack.config.js --mode development",
     "lint": "npx eslint  -c .eslintrc.json src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run test:cjs && npm run test:mjs",
@@ -70,28 +68,28 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/cjs/src/index.js",
-  "module": "./dist/mjs/src/index.js",
-  "types": "./dist/mjs/src/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": {
-        "default": "./dist/cjs/src/index.js",
-        "types": "./dist/cjs/src/index.d.ts"
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
       },
       "import": {
-        "default": "./dist/mjs/src/index.js",
-        "types": "./dist/mjs/src/index.d.ts"
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
       }
     },
     "./public-api": {
       "require": {
-        "default": "./dist/cjs/src/public-api.js",
-        "types": "./dist/cjs/src/public-api.d.ts"
+        "default": "./dist/public-api.js",
+        "types": "./dist/public-api.d.ts"
       },
       "import": {
-        "default": "./dist/mjs/src/public-api.js",
-        "types": "./dist/mjs/src/public-api.d.ts"
+        "default": "./dist/public-api.js",
+        "types": "./dist/public-api.d.ts"
       }
     }
   },
