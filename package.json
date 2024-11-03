@@ -1,6 +1,6 @@
 {
   "name": "@delgadotrueba/prime-react-lib",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Description",
   "author": "delgadotrueba",
   "keywords": [
@@ -77,6 +77,18 @@
       "import": {
         "default": "./dist/index.js",
         "types": "./dist/src/index.d.ts"
+      }
+    },
+    "./sum": {
+      "import": {
+        "default": "./dist/sum.js",
+        "types": "./dist/src/components/sum.d.ts"
+      }
+    },
+    "./Button": {
+      "import": {
+        "default": "./dist/button.js",
+        "types": "./dist/src/components/atoms/Button/Button.d.ts"
       }
     },
     "./public-api": {
