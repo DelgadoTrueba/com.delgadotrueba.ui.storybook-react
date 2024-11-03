@@ -9,6 +9,7 @@
     /*Emit*/
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "isolatedModules": true, // Unconditionally emit imports for unresolved files
     /*Config*/
     "lib": ["es2020", "dom"],
     "importHelpers": true,
@@ -18,6 +19,18 @@
     "strict": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "allowJs": true,
+    "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "resolveJsonModule": true,
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    /*Webpack*/
+    //"noEmit": true, // Do not emit output (meaning do not compile code, only perform type checking)
+    /*React*/
+    "jsx": "react", // Support JSX in .tsx files
     /*Alias*/
     "baseUrl": ".",
     "rootDir": "."

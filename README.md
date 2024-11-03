@@ -1,4 +1,4 @@
-# @delgadotrueba/template-js
+# @delgadotrueba/prime-react-lib
 
 > description
 
@@ -34,7 +34,7 @@ npm publish
 Guide to use the Library
 
 ```
-npm install @delgadotrueba/template-js --save
+npm install @delgadotrueba/prime-react-lib --save
 ```
 
 ## Import
@@ -52,14 +52,3 @@ npm install @delgadotrueba/template-js --save
 ```
 
 ## Usage
-
-## License
-
-MIT
-
-[npm-image]: https://img.shields.io/npm/v/%40delgadotrueba%template-js
-[npm-url]: https://www.npmjs.com/package/@delgadotrueba/template-js
-[downloads-image]: https://img.shields.io/npm/dy/%40delgadotrueba%template-js
-[downloads-url]: https://www.npmjs.com/package/@delgadotrueba/template-js
-[license-image]: http://img.shields.io/npm/l/%40delgadotrueba%template-js.svg?style=flat
-[license-url]: LICENSE.md
