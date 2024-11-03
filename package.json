@@ -1,6 +1,6 @@
 {
   "name": "@delgadotrueba/prime-react-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Description",
   "author": "delgadotrueba",
   "keywords": [
@@ -50,6 +50,7 @@
     "lint-staged": "15.2.8",
     "prettier": "3.3.3",
     "ts-jest": "29.2.4",
+    "ts-loader": "9.5.1",
     "typescript": "5.5.4",
     "webpack": "5.96.1",
     "webpack-cli": "5.1.4",
@@ -68,26 +69,26 @@
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "require": {
         "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
+        "types": "./dist/src/index.d.ts"
       },
       "import": {
         "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
+        "types": "./dist/src/index.d.ts"
       }
     },
     "./public-api": {
       "require": {
         "default": "./dist/public-api.js",
-        "types": "./dist/public-api.d.ts"
+        "types": "./dist/src/public-api.d.ts"
       },
       "import": {
         "default": "./dist/public-api.js",
-        "types": "./dist/public-api.d.ts"
+        "types": "./dist/src/public-api.d.ts"
       }
     }
   },
