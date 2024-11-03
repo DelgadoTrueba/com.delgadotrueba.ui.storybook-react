@@ -1,4 +1,2 @@
-import sum from './components/sum';
-import { Button } from './components/atoms/Button';
-
-export { sum, Button };
+export * from './components/sum';
+export * from './components/atoms/Button';

@@ -3,16 +3,20 @@ const path = require('path');
 const printCompilationMessage = require('./scripts/compilation.config.js');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: {
+        index: './src/index.ts',
+        sum: './src/components/sum.ts',
+        button: './src/components/atoms/Button'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
+        filename: '[name].js',
         publicPath: 'auto',
         clean: true,
         library: {
-            name: 'prime-react-lib',
+            name: 'prime-react-lib-[name]',
             type: 'umd',
-        }
+        },
     },
     resolve: {
         extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
