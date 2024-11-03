@@ -2,13 +2,13 @@
 module.exports = {
   displayName: 'http',
   preset: './jest.preset.js',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.[tj]s$': [
       'ts-jest',
-      { tsconfig: '<rootDir>/tsconfig.cjs.spec.json' },
+      { tsconfig: '<rootDir>/tsconfig.spec.json' },
     ],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: './coverage/cjs',
+  coverageDirectory: './coverage',
 };

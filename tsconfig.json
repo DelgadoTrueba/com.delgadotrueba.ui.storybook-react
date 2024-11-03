@@ -40,6 +40,9 @@
   "references": [
     {
       "path": "./tsconfig.eslint.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
     }
   ]
 }

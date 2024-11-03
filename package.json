@@ -19,10 +19,8 @@
     "build:dev": "npx webpack --config webpack.config.js --mode development",
     "lint": "npx eslint  -c .eslintrc.json src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
-    "test": "npm run test:cjs && npm run test:mjs",
-    "test:cjs": "npx jest -c jest.cjs.config.js --verbose",
-    "test:mjs": "npx jest -c jest.mjs.config.js --verbose",
-    "test:coverage": "npm run test:cjs -- --coverage && npm run test:mjs -- --coverage",
+    "test": "npx jest -c jest.config.js --verbose",
+    "test:coverage": "npm run test -- --coverage",
     "prepare": "husky",
     "prepublishOnly": "npm run test && npm run build"
   },
