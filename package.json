@@ -15,6 +15,7 @@
     "url": "https://github.com/delgadotrueba/template-js"
   },
   "scripts": {
+    "web:build": "npx webpack --config webpack.config.js",
     "build": "npm run build:cjs && npm run build:mjs",
     "build:cjs": "npx tsc -p tsconfig.cjs.json",
     "build:mjs": "npx tsc -p tsconfig.mjs.json",
@@ -47,7 +48,10 @@
     "lint-staged": "15.2.8",
     "prettier": "3.3.3",
     "ts-jest": "29.2.4",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "webpack": "5.96.1",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.1.0"
   },
   "dependencies": {
     "path-to-regexp": "6.2.1",
