@@ -31,12 +31,12 @@
     /*Webpack*/
     //"noEmit": true, // Do not emit output (meaning do not compile code, only perform type checking)
     /*React*/
-    "jsx": "react", // Support JSX in .tsx files
+    "jsx": "react-jsx",
     /*Alias*/
     "baseUrl": ".",
     "rootDir": "."
   },
-  "include": ["./src/**/*.ts", "src/**/*.d.ts"],
+  "include": ["./src/**/*.ts", "src/**/*.d.ts", "./src/**/*.tsx"],
   "exclude": ["node_modules", "jest.config.ts"],
   "references": [
     {

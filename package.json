@@ -1,6 +1,6 @@
 {
   "name": "@delgadotrueba/prime-react-lib",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Description",
   "author": "delgadotrueba",
   "keywords": [
@@ -33,6 +33,8 @@
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
     "@types/jest": "29.5.12",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "babel-loader": "9.2.1",
@@ -58,6 +60,8 @@
   },
   "dependencies": {
     "path-to-regexp": "6.2.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tslib": "2.6.3"
   },
   "publishConfig": {
@@ -68,24 +72,15 @@
     "dist"
   ],
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": {
-        "default": "./dist/index.js",
-        "types": "./dist/src/index.d.ts"
-      },
       "import": {
         "default": "./dist/index.js",
         "types": "./dist/src/index.d.ts"
       }
     },
     "./public-api": {
-      "require": {
-        "default": "./dist/public-api.js",
-        "types": "./dist/src/public-api.d.ts"
-      },
       "import": {
         "default": "./dist/public-api.js",
         "types": "./dist/src/public-api.d.ts"
