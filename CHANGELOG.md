@@ -1,5 +1,12 @@
 # Changelog
 
+### React scaffolding #2
+
+- chore: 🏗️ add babelrc
+- chore: 🏗️ add webpack
+- chore: 🏗️ add react and react-dom peerDepencey
+- chore: 🏗️ webpack build multi-entrypoint
+
 ### Create scaffolding #1
 
 - chore: 🏗️ add release-please
