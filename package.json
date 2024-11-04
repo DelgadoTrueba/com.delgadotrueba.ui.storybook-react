@@ -90,12 +90,6 @@
         "default": "./dist/button.js",
         "types": "./dist/src/components/atoms/Button/Button.d.ts"
       }
-    },
-    "./public-api": {
-      "import": {
-        "default": "./dist/public-api.js",
-        "types": "./dist/src/public-api.d.ts"
-      }
     }
   },
   "sideEffects": false
